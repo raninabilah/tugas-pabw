@@ -1,0 +1,6 @@
+<p style="color: green"><%= notice %></p>
+
+<%= form_with url: import_user_index_path, method: :post do |form| %>
+  <%= form.file_field :file, accept: ".csv" %>
+  <%= form.button "Import" %>
+<% end %>
